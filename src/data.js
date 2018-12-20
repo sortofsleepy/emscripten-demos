@@ -1,0 +1,1 @@
+export default [{"name":"cube-mapping","path":"/static/demos/cube-mapping/index.html","thumb":"/static/demos/cube-mapping/thumb.jpg"},{"name":"motion-blur","path":"/static/demos/motion-blur/index.html","thumb":"/static/demos/motion-blur/thumb.jpg"},{"name":"normal-mapping","path":"/static/demos/normal-mapping/index.html","thumb":"/static/demos/normal-mapping/thumb.jpg"}]
