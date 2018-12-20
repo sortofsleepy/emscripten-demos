@@ -1,4 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo:400,700');
 *{
   margin:0;
   padding:0;
+}
+
+body {
+  font-family: 'Aleo';
+}
+
+
+h1 {
+  font-weight: bold;
+}
+
+#demos {
+  padding:60px;
+}
+
+#demo-items {
+  padding-top:20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:10px;
+  .demo-item {
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width:400px){
+    grid-template-columns: repeat(2,1fr);
+  }
 }

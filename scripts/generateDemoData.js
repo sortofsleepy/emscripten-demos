@@ -21,12 +21,17 @@ let demoData = demos.map(demo => {
 
     finalName = finalName.join(" ");
 
-
+    let notes = "";
+    if(fs.existsSync(`static/demos/${demo}/notes.json`)) {
+        notes = JSON.parse(fs.readFileSync(`static/demos/${demo}/notes.json`, "utf8")).notes;
+    }
 
     return {
         name:finalName,
         path:`/static/demos/${demo}/index.html`,
-        thumb:`/static/demos/${demo}/thumb.jpg`
+        thumb:`/static/demos/${demo}/thumb.jpg`,
+        notes:notes
+
     };
 });
 
