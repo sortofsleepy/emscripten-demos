@@ -4,8 +4,10 @@ import {getData} from "../src/utils";
 export default () =>
     <section id="demos">
 
-        <h1>Cinder Emscripten </h1>
-
+        <div id="copy">
+            <h1>Cinder Emscripten </h1>
+            <h3>These are just a small sampling of what's possible with Cinder and Emscripten</h3>
+        </div>
         <div id="demo-items">
 
             {getData().map((itm,idx) => {
@@ -22,9 +24,9 @@ export default () =>
                         <a href={itm.path} target="_blank">
                             <img src={itm.thumb}/>
                             <br/>
-                            <p>{itm.name} {notes}</p>
-
+                            <p>{itm.name}</p>
                         </a>
+                        <p>{notes}</p>
                     </div>
 
                 )
