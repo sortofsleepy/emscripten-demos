@@ -1,3 +1,9 @@
 {
-  "name":"cinder-emscripten-demos"
+  "name":"cinder-emscripten-demos",
+  "builds":[
+    {
+      "src":"package.json",
+      "use":"@now/static-build"
+    }
+  ]
 }
