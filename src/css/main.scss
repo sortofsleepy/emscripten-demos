@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Aleo:400,700');
+$red:#a41c12;
+
 *{
   margin:0;
   padding:0;
@@ -40,5 +42,24 @@ h3 {
 
   @media screen and (max-width:400px) {
     grid-template-columns: repeat(1,1fr);
+  }
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color:#333;
+  font-weight: bold;
+  transition:all 1.2s ease;
+  &:hover {
+    transition:all 1.2s ease;
+    color:$red;
+  }
+}
+
+ul {
+  margin-top:5px;
+  li {
+    list-style: none;
   }
 }
