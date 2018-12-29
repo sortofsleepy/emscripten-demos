@@ -20,7 +20,6 @@ export default () =>
 
             {getData().map((itm,idx) => {
                 let notes = "";
-                console.log(itm.notes)
                 if(itm.notes !== ""){
                     notes = `(${itm.notes})`;
                 }
