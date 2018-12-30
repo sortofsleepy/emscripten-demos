@@ -1,5 +1,8 @@
 {
   "name":"cinder-emscripten-demos",
+  "alias":[
+    "ci-emscripten"
+  ],
   "builds":[
     {
       "src":"package.json",

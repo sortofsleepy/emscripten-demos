@@ -7,6 +7,9 @@ export default () =>
         <div id="copy">
             <h1>Cinder Emscripten </h1>
             <h3>These are just a small sampling of what's possible with Cinder and Emscripten</h3>
+            <p>Note that some samples may currently require some minor modifications in order to run. PRs to support
+                Emscripten are welcome. 
+            </p>
 
             <br/>
             <p>More information:</p>
