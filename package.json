@@ -6,7 +6,7 @@
   "scripts": {
     "start": "next",
     "build": "next build",
-    "now-build":"next build && next export -o dist"
+    "now-build": "next build && next export -o dist"
   },
   "author": "",
   "license": "ISC",

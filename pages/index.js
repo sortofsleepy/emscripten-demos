@@ -7,12 +7,19 @@ export default () =>
         <div id="copy">
             <h1>Cinder Emscripten </h1>
             <h3>These are just a small sampling of what's possible with Cinder and Emscripten</h3>
+
+            <br/>
+            <p>More information:</p>
+
+            <ul>
+                <li><a href="https://libcinder.org/docs/guides/emscripten/index.html">Emscripten Guide</a></li>
+                <li><a href="http://libcinder.org" target="_blanke">Cinder</a></li>
+            </ul>
         </div>
         <div id="demo-items">
 
             {getData().map((itm,idx) => {
                 let notes = "";
-                console.log(itm.notes)
                 if(itm.notes !== ""){
                     notes = `(${itm.notes})`;
                 }
