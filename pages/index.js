@@ -23,8 +23,11 @@ export default () =>
 
             {getData().map((itm,idx) => {
                 let notes = "";
-                if(itm.notes !== ""){
-                    notes = `(${itm.notes})`;
+                let source = "";
+
+                if(itm.meta !== undefined){
+                    notes = itm.meta.notes !== undefined ? `(${itm.meta.notes})` : "";
+                    source = itm.meta.source !== undefined ? (<a class="sourceLink" href={itm.meta.source} target="_blank">Source</a>) : ""
                 }
 
                 return (
@@ -33,9 +36,10 @@ export default () =>
 
                         <a href={itm.path} target="_blank">
                             <img src={itm.thumb}/>
+                            </a>
                             <br/>
-                            <p>{itm.name}</p>
-                        </a>
+                            <p class="demo-title">{itm.name} - {source}</p>
+                        
                         <p>{notes}</p>
                     </div>
 

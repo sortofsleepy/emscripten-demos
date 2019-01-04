@@ -1,3 +1,4 @@
 {
-  "notes":"Can take some time to load"
+  "notes":"Can take some time to load",
+  "source": "https://github.com/cinder/Cinder/tree/master/samples/_opengl/NormalMapping"
 }
